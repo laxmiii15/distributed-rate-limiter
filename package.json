@@ -1,0 +1,33 @@
+{
+  "name": "distributed-rate-limiter",
+  "version": "1.0.0",
+  "description": "Distributed, atomic rate limiting for NestJS — token-bucket + sliding-window strategies enforced in Redis via Lua, correct across many app instances. With a load test that proves the limit holds.",
+  "license": "MIT",
+  "scripts": {
+    "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main.js",
+    "demo": "tsx scripts/demo.ts",
+    "lint": "eslint \"{src,scripts}/**/*.ts\" --fix"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.4",
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/core": "^10.4.4",
+    "@nestjs/platform-express": "^10.4.4",
+    "ioredis": "^5.4.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.5",
+    "@types/express": "^4.17.25",
+    "@types/node": "^22.7.4",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
